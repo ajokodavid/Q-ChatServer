@@ -11,7 +11,7 @@ list_of_userdetails = []
 @openapi.summary("This is the homepage endpoint")
 @openapi.description("This endpoint displays the homepage")
 async def homepage(request):
-    return redirect("http://127.0.0.1:5500/index.html")
+    return redirect("https://ajokodavid.github.io/Q-ChatClient")
 
 
 @bp.route("/signin", methods=['POST'])
@@ -32,4 +32,4 @@ async def hello_world(request: Request):
 @openapi.summary("This is the chat application endpoint")
 @openapi.description("Redirects user to the chat application page")
 async def qchat(request):
-    return redirect("http://127.0.0.1:5500/chat.html")
+    return redirect("https://ajokodavid.github.io/Q-ChatClient")
